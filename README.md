@@ -7,10 +7,10 @@ Hardware:
 2. Run $lsusb in the terminal. Find your mouse listed and take note of its Bus and Device number.
 ![image](https://user-images.githubusercontent.com/45887966/199812836-a879cbc8-5568-41e4-9f4a-8f34815b41bc.png)
 
-3. Run $lsusb -D /dev/bus/usb/<YOUR MOUSE'S BUS ID>/<YOUR MOUSE'S DEVICE ID>. This will give you information about the device, including its vendor ID and product ID.
+3. Run $lsusb -D /dev/bus/usb/<YOUR MOUSE'S BUS ID>/<YOUR MOUSE'S DEVICE ID>. This will give you information about the device, including its vendor ID and product ID. You will need the vendor ID and product ID later on.
 ![image](https://user-images.githubusercontent.com/45887966/199812928-f51e65c6-f3be-433e-ab2c-cebdef8582e8.png)
 
-4. cd to /dev/input/by-id and run $ls. Find and take note of your device.
+4. cd to /dev/input/by-id and run $ls. Find and take note of your device name, you will need it later on.
 ![image](https://user-images.githubusercontent.com/45887966/199813764-3671499f-b935-4754-9892-01ceea4a5ad0.png)
 
 
