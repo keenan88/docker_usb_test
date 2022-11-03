@@ -6,17 +6,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: docker_usb_test
     network_mode: host
     volumes:
       - ../src:/ros_ws/src
-      - /dev:/dev
-#    devices:
-#      - /dev
-#      - /dev/bus
-#      - /dev/bus/usb # For Realsenses
-#      - /dev/displaylink/by-id/usb-001-009-DisplayLink_ASUSTEK_MB169B+_K2LMTF108544:/dev/displaylink/by-id/usb-001-009-DisplayLink_ASUSTEK_MB169B+_K2LMTF108544
-#      - /dev/input/by-id/usb-SINOWEALTH_Game_Mouse-if01-event-kbd:/dev/input/by-id/usb-SINOWEALTH_Game_Mouse-if01-event-kbd
+      - /dev/input/by-id/usb-SINOWEALTH_Game_Mouse-if01-event-kbd:/dev/input/by-id/usb-SINOWEALTH_Game_Mouse-if01-event-kbd
     privileged: true
     stdin_open: true  # For debugging only
     tty: true         # For debugging only
